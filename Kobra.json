@@ -1,0 +1,138 @@
+{
+	"font": "AniMeMatrix-MB_EN",
+	"textcolor": "#FFFFFF",
+	"faction": {
+		"size": 28.0,
+		"x": 83,
+		"y": 68
+	},
+	"unit": {
+		"size": 50.0,
+		"x": 83,
+		"y": 164
+	},
+	"points": {
+		"size": 36.0, 
+		"x": 1215,
+		"y": 120,
+		"format": "%d pts"
+	},
+	"shields": {
+		"type": "dots",
+		"cols": 6,
+		"background": "#FFFFFF",
+		"color": "#295083",
+		"x": 82,
+		"y": 897,
+		"spacing": 84,
+		"border": 6,
+		"size": 60
+	},
+	"hull": {
+		"type": "dots",
+		"cols": 6,
+		"background": "#FFFFFF",
+		"color": "#0e5e1b",
+		"x": 610,
+		"y": 897,
+		"spacing": 84,
+		"border": 6,
+		"size": 60
+	},
+	"crew": {
+		"type": "dots",
+		"cols": 5,
+		"background": "#FFFFFF",
+		"color": "#441a48",
+		"x": 1130,
+		"y": 897,
+		"spacing": 84,
+		"border": 6,
+		"size": 60
+	},
+	"traits": {
+		"strike": true,
+		"assault": true,
+		"size": 20,
+		"x": 702,
+		"y": 582,
+		"multiline": true,
+		"maxheight": 170
+	},
+	"upgrades": {
+		"size": 20,
+		"x": 1106,
+		"y": 582,
+		"formateach": "[ ] %s",
+		"multiline": true,
+		"maxheight": 170
+	},
+	"weaponname": [
+		{
+			"size": 24,
+			"x": 795,
+			"y": 280,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 85
+		},
+		{
+			"size": 24,
+			"x": 995,
+			"y": 280,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 85
+		},
+		{
+			"size": 24,
+			"x": 1195,
+			"y": 280,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 85
+		},
+		{
+			"size": 24,
+			"x": 1400,
+			"y": 280,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 85
+		}
+	],
+	"weaponcount": [
+		{
+			"size": 80,
+			"x": 794,
+			"y": 485,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 190
+		},
+		{
+			"size": 80,
+			"x": 995,
+			"y": 485,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 190
+		},
+		{
+			"size": 80,
+			"x": 1195,
+			"y": 485,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 190
+		},
+		{
+			"size": 80,
+			"x": 1400,
+			"y": 485,
+			"center": true,
+			"maxwidth": 190,
+			"maxheight": 190
+		}
+	]
+}
