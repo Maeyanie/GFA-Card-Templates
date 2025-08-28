@@ -2,7 +2,7 @@ Templates to be served by my unofficial automatic card generator hosted at https
 
 Anyone is welcome to create and submit a template. You can also send me a blank card and a filled out example card and I'll make a template to fit it, and post it here.
 
-The dataset used to generate the cards is by CheshySky, and can be found here: https://github.com/CheshySky/Grand-Fleet-Admiral
+The dataset used to generate the cards is by CheshySky, at: https://github.com/CheshySky/Grand-Fleet-Admiral
 Any issues, fixes, or other contributions to the dataset should be directed that way.
 
 I tried to make the JSON template format relatively flexible. If any modifications or extensions are needed to do what you're after, feel free to ask.
