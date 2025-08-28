@@ -69,33 +69,29 @@ The background image used is "Template-Faction.png" if it exists, falling back t
     
     The "weaponname" section is an array of 4 text sections (as above), one for each of the faction's 4 weapon types
     If the faction has fewer than 4 weapon types, the remaining ones are skipped (but I could make that configurable)
-    "weaponname": {
-        [
-            {
-                # Text Section 1
-            }, {
-                # Text Section 2
-            }, {
-                # Text Section 3
-            }, {
-                # Text Section 4
-            }
-        ]
-    },
+    "weaponname": [
+		{
+			# Text Section 1
+		}, {
+			# Text Section 2
+		}, {
+			# Text Section 3
+		}, {
+			# Text Section 4
+		}
+	],
     
     The "weaponcount" section is an array of 4 numeric sections (as above), one for each of the ship's 4 weapon types
     Any weapon types the ship doesn't have are skipped and won't be drawn (but I could make that configurable too)
-    "weaponcount": {
-        [
-            {
-                # Numeric Section 1
-            }, {
-                # Numeric Section 2
-            }, {
-                # Numeric Section 3
-            }, {
-                # Numeric Section 4
-            }
-        ]
-    }
+    "weaponcount": [
+		{
+			# Numeric Section 1
+		}, {
+			# Numeric Section 2
+		}, {
+			# Numeric Section 3
+		}, {
+			# Numeric Section 4
+		}
+	]
 }
