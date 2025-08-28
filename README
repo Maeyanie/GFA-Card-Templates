@@ -7,41 +7,45 @@ Any issues, fixes, or other contributions to the dataset should be directed that
 
 I tried to make the JSON template format relatively flexible. If any modifications or extensions are needed to do what you're after, feel free to ask.
 
-The templates are in JSON. Most sections are optional.
+The templates are in JSON. Colours are specified in hex, using the HTML standard of "#RRGGBB"
 The background image used is "Template-Faction.png" if it exists, falling back to "Template.png" if it doesn't.
 
 {
-    "font": "Font Name",    The name of the font. At the moment they're manually downloaded, but TrueType font which can be freely downloaded and used is fine.
-    "textcolor": "#RGB",    Used for all the text. At the moment there's no override for specific sections, but this would be easy to add if anyone needs it.
+    "font": "Font Name",    The name of the font. At the moment they're manually downloaded,
+                            but any TrueType font which can be freely downloaded and used is fine.
+    "textcolor": "#RGB",    Used for all the text. At the moment there's no override for specific 
+                            sections, but this would be easy to add if anyone needs it.
     
     All sections are technically optional. They're primarily broken into two types, text and numeric.
     All entries in a section are also optional.
     
-    # The following text sections are available: faction, unit, traits, upgrades
+    The following text sections are available: faction, unit, traits, upgrades
     "text section": {
         "size": 10.0,               Floating-point number for the size of the text
         "x": 10,                    X position of the text, in pixels from the left
         "y": 10,                    Y position of the text, in pixels from the top
         "format": "A %s B",         Format passed through sprintf(), with one string argument.
         "center": true/false,       Whether or not to center the text, both horizontally and vertically
-        "maxwidth": 200,            Limit the text to no wider than this many pixels. If it would exceed this, it will word wrap until it fits
-        "maxheight": 100            Limit the text to no taller than this many pixels. If it would exceed this, the font size is reduced until it fits
+        "maxwidth": 200,            Limit the text to no wider than this many pixels
+                                    If it would exceed this, it will word wrap until it fits
+        "maxheight": 100            Limit the text to no taller than this many pixels
+                                    If it would exceed this, the font size is reduced until it fits
     },
     
-    # The "traits" section, in addition to the standard text section settings, has the following:
+    The "traits" section, in addition to the standard text section settings, has the following:
     "traits": {
         "strike": true/false,       If true, include the number of Strike Bays as a trait
 		"assault": true/false,      If true, include the number of Assault Bays as a trait
         "multiline": true/false     If true, print the traits one per line
     }
     
-    # The "upgrades" section, in addition to the standard text section settings, has the following:
+    The "upgrades" section, in addition to the standard text section settings, has the following:
     "upgrades": {
         "multiline": true/false     If true, print the traits one per line    
     }
     
-    # The following numeric sections are available: points, shields, hull, thrust, crew
-    # It comes in two types, "text" and "dots" with text being the default if "type" isn't provided.
+    The following numeric sections are available: points, shields, hull, thrust, crew
+    It comes in two types, "text" and "dots" with text being the default if "type" isn't provided.
     "text numeric section": {
         "type": "text",
         "size": 10.0,               Floating-point number for the size of the text
@@ -55,16 +59,16 @@ The background image used is "Template-Faction.png" if it exists, falling back t
         "type": "dots",
         "x": 10,                    X position of the center of the first dot, in pixels from the left
         "y": 10,                    Y position of the center of the first dot, in pixels from the top
-        "cols": 5,                  Number of columns of dots to draw. After this many is reached, they'll wrap to a new line
+        "cols": 5,                  Number of columns of dots to draw. After this many, they'll wrap to a new line
 		"size": 60,                 The size of the dot, in pixels
 		"color": "#RGB",            Draw the dot in the provided colour
 		"border": 6,                Draw a border around the dot, this many pixels thick
         "background": "#RGB",       Draw the border (if any) in the provided colour
-		"spacing": 80               The spacing between the centers of dots, used for both X spacing within a row and Y spacing between rows
+		"spacing": 80               The spacing between the centers of dots, both within a row and between rows
     },
     
-    # The "weaponname" section is an array of 4 text sections (as above), one for each of the faction's 4 weapon types
-    # If the faction has fewer than 4 weapon types, the remaining ones are skipped (but I could make that configurable)
+    The "weaponname" section is an array of 4 text sections (as above), one for each of the faction's 4 weapon types
+    If the faction has fewer than 4 weapon types, the remaining ones are skipped (but I could make that configurable)
     "weaponname": {
         [
             {
@@ -79,8 +83,8 @@ The background image used is "Template-Faction.png" if it exists, falling back t
         ]
     },
     
-    # The "weaponcount" section is an array of 4 numeric sections (as above), one for each of the ship's 4 weapon types
-    # Any weapon types the ship doesn't have are skipped and won't be drawn (but I could make that configurable too)
+    The "weaponcount" section is an array of 4 numeric sections (as above), one for each of the ship's 4 weapon types
+    Any weapon types the ship doesn't have are skipped and won't be drawn (but I could make that configurable too)
     "weaponcount": {
         [
             {
