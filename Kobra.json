@@ -57,14 +57,17 @@
 		"x": 702,
 		"y": 582,
 		"multiline": true,
+		"maxwidth": 390,
 		"maxheight": 170
 	},
 	"upgrades": {
 		"size": 20,
 		"x": 1106,
 		"y": 582,
-		"formateach": "[ ] %s",
+		"formatchecked": "[X] %s",
+		"formatunchecked": "[ ] %s",
 		"multiline": true,
+		"maxwidth": 390,
 		"maxheight": 170
 	},
 	"weaponname": [

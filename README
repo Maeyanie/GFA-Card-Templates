@@ -36,12 +36,16 @@ The background image used is "Template-Faction.png" if it exists, falling back t
     "traits": {
         "strike": true/false,       If true, include the number of Strike Bays as a trait
 		"assault": true/false,      If true, include the number of Assault Bays as a trait
-        "multiline": true/false     If true, print the traits one per line
+        "multiline": true/false,    If true, print the traits one per line
+        "formateach": "A %s B"      Format passed through sprintf(), once per trait
     }
     
     The "upgrades" section, in addition to the standard text section settings, has the following:
     "upgrades": {
-        "multiline": true/false     If true, print the traits one per line    
+        "multiline": true/false,    If true, print the traits one per line    
+        "formatchecked": "A %s B"   Format passed through sprintf(), for each checked upgrade
+        "formatunchecked": "A %s B" Format passed through sprintf(), for each unchecked upgrade
+        "formateach": "A %s B"      Format passed through sprintf(), if the above isn't used
     }
     
     The following numeric sections are available: points, shields, hull, thrust, crew
