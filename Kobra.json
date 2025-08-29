@@ -1,6 +1,13 @@
 {
 	"font": "AniMeMatrix-MB_EN",
 	"textcolor": "#FFFFFF",
+	"image": {
+		"x": 361,
+		"y": 474,
+		"z": 1,
+		"width": 650,
+		"height": 530
+	},
 	"faction": {
 		"size": 28.0,
 		"x": 83,

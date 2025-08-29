@@ -71,6 +71,18 @@ The background image used is "Template-Faction.png" if it exists, falling back t
 		"spacing": 80               The spacing between the centers of dots, both within a row and between rows
     },
     
+    The "image" section is used for the picture of the ship.
+    When resizing the image to fit, the aspect ratio will be preserved.
+    "image": {
+        "x": 10,                    X position of the center of the image, in pixels from the left
+        "y": 10,                    Y position of the center of the image, in pixels from the top
+        "z": 1,                     1 for above the template image, -1 for below the template image
+        "background": "#RGB",       For z=-1, if the image has transparent areas, they will be filled with this colour
+        "border": 10,               When using a background, add a border of this many pixels
+        "w": 100,                   Width of the image, in pixels
+        "h": 100                    Height of the image, in pixels
+    }
+    
     The "weaponname" section is an array of 4 text sections (as above), one for each of the faction's 4 weapon types
     If the faction has fewer than 4 weapon types, the remaining ones are skipped (but I could make that configurable)
     "weaponname": {
